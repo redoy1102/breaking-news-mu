@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { Button } from '@material-ui/core';
+import News from './components/News/News';
+import Upload from './components/News/Upload/Upload';
+import ComplexButtons from './components/News/ComplexButtons/ComplexButtons';
+import SpiltButtons from './components/News/SplitButtons/SpiltButtons';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit done <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Button color="primary">Hello World</Button> */}
+      <News></News>
+      {/* <br/>
+      <Upload></Upload>
+      <br/>
+      <ComplexButtons></ComplexButtons>
+      <br/>
+      <SpiltButtons></SpiltButtons> */}
     </div>
   );
 }
